@@ -178,6 +178,7 @@ nav ul li:hover {
     text-transform: uppercase;
     align-items: center;
     overflow: hidden;
+    
 
 }
 
@@ -278,6 +279,7 @@ button {
     border: whitesmoke;;
     cursor: pointer;
     padding: 3rem;
+    color: #262424;
 }
 
 button img {
@@ -290,6 +292,8 @@ button img {
    width: 100%;
    display: flex;
    font-family: 'DM sans';
+   text-decoration: none;
+   color: var(--color-text);
    
 }
 
@@ -297,6 +301,7 @@ button img {
     font-size: 17px;
     font-family: 'DM sans';
     text-transform: none;
+    color: #262424;
 }
 
 
@@ -607,6 +612,12 @@ footer {
 
 @media (max-width: 425px) {
     /* Adjust the layout and styles */
+
+    .title{
+        margin-top: 2.5rem;
+    }
+
+
     .about-container #description{
         color: var(--color-text);
         font-size: 3.7vw;
