@@ -617,6 +617,10 @@ footer {
         margin-top: 3rem;
     }
 
+    .main-container img{
+        margin-bottom: 2rem;
+    }
+
 
     .about-container #description{
         color: var(--color-text);
