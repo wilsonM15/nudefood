@@ -1,478 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu — NUDE Coffee Shop</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="menu.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=DM+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>NUDE Menu</title>
+    <link rel="stylesheet" href="menu.css">
+
+    <!----FONTS------------------------>
+    <!------CLIMATE CRISIS----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <!------DM SANS----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    <!-------LOADING SCREEN -------->
+    <!--
+    <div id="loading-screen">
+        <div class="nude-text">NUDE coffee shop</div>
+    </div>
+    -->
 
-    <!-- ░░░ NOISE OVERLAY ░░░ -->
-    <div class="noise" aria-hidden="true"></div>
-
-    <!-- ░░░ NAVBAR ░░░ -->
-    <header id="top">
-        <nav>
-            <a href="index.html" class="nav-logo">NUDE</a>
-            <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="menu.html" class="nav-active">Menu</a></li>
-                <li><a href="index.html#photos">Photos</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+    <!-------HEADER----------------->
+    <header>
+        <nav class='container'>
+            <ul>
+                <img src='sun.png' alt='sun' width='20px' height='20px'>
+                <li><a href='index.html'>Home</a></li>
             </ul>
-            <div class="nav-sun" aria-hidden="true">☀</div>
         </nav>
     </header>
+    <main>
+        <section>
+            <div class="menu-section">
+                <h1 id="en_title">Notre Menu</h1>
+                
+                <div class="menu-container">
+                  <!-- Food Menu Section -->
+                  <div class="food-menu">
+                    <h2 id="en_food">FOOD</h2>
+                    <ul>
+                      <li>
+                        <strong>POKE BOWL</strong>
+                        <span id="tr_price"></span>
+                      </li>
+                      <li>
+                        <strong>ALOHA SALMON POKE :</strong> <span> S 12,90€ | L 14,90€</span><p id="tr_1st_dish"> Riz Vinaigré, Saumon, Avocat, Mangue, Chou, Edamame, Concombre </p> 
+                      </li>
+                      <li>
+                        <strong>TUNAVOCADO POKE :</strong> <span> S 11,90€ | L 13,90€</span><p id="tr_2nd_dish"> Riz Vinaigré, Mousse de Thon Maison, Avocat, Chou, Mangue, Concombre </p>
+                      </li>
+                      <li>
+                        <strong>CHICKEN TERIYAKI POKE :</strong> <span> S 11,90€ | L 13,90€</span> <p id="tr_3rd_dish"> Riz Vinaigré, Poulet Teriyaki, Avocat, Mangue, Chou, Edamame, Coriandre </p>
+                      </li>
+                      <li>
+                        <strong>VEGGIE TOFU POKE :</strong> <span> S 11,90€ | L 13,90€</span> <p id="tr_3rd_dish"> Riz Vinaigré, Dés de Tofu Caramélisé, Avocat, Mangue, Chou, Carotte, Edamame </p>
+                      </li>
+<br> <br>
+                      <li>
+                        <strong>SALADE BOWL</strong><span id="tr_price_2nd"></span>
+                      </li>
+                      <li>
+                        <strong>NAMMOS :</strong> <span> S 11,90€ | L 13,90€</span> <p id="tr_4th_dish"> Salade, Tomate, Concombre, Poivron, Feta, Olive Kalamata, Oignon Rouge, Croutons de Pain Nordique</p> 
+                      </li>
+                      <li>
+                        <strong>TUNAVOCADO SALADE :</strong><span> S 11,90€ | L 13,90€</span> <p id="tr_5th_dish"> Salade, Quinoa, Mousse de Thon Maison, Avocats, Chou, Poivrons, Edamame, Oignon Rouge, Olives</p>  
+                      </li>
+                      <li>
+                        <strong> CHICKEN SAMUI BOWL :</strong> <span> S 11,90€ | L 13 ,90€</span><p id="tr_6th_dish"> Salade, Quinoa, Poulet Teriyaki, Chou, Avocats, Mangue, Tomates, Carottes, Coriandre, Citron Vert  </p> 
+                      </li>
+                      <li>
+                        <strong>HIGH PROTEIN :</strong> <span> S 12,90€ | L 14,90€</span> <p id="tr_7th_dish"> Salade, Quinoa, Saumon, Avocat, Oeuf, Carotte, Edamame, Croutons, Oignon Rouge</p> 
+                      </li>
+                      <li>
+                        <strong>TOFU POWER BOWL :</strong> <span> S 11,90€ | L 13,90€</span> <p id="tr_7th_dish"> Salade, Quinoa, Dés de Tofu Caramélisé, Mangue, Carotte, Edamame, Concombre, Coriandre</p> 
+                      </li> 
 
-    <!-- ░░░ MENU HERO ░░░ -->
-    <section class="menu-hero">
-        <div class="menu-hero-bg" aria-hidden="true">MENU</div>
-        <div class="menu-hero-content">
-            <div class="about-label">Notre Menu</div>
-            <h1 class="menu-hero-title">What's cooking.</h1>
-            <p class="menu-hero-sub">Fresh, healthy &amp; made with love — every single day.</p>
-        </div>
-        <div class="menu-hero-img-row">
-            <div class="menu-hero-img"><img src="https://nudefood.netlify.app/food.png" alt="Food at NUDE" /></div>
-            <div class="menu-hero-img tall"><img src="https://nudefood.netlify.app/juice.png" alt="Juices at NUDE" /></div>
-            <div class="menu-hero-img"><img src="https://nudefood.netlify.app/cafe.png" alt="Coffee at NUDE" /></div>
-        </div>
-    </section>
-
-    <!-- ░░░ CATEGORY NAV ░░░ -->
-    <div class="cat-nav-wrap">
-        <nav class="cat-nav">
-            <a href="#food" class="cat-pill active">🍱 Food</a>
-            <a href="#juices" class="cat-pill">🥤 Juices</a>
-            <a href="#electrolyte" class="cat-pill">⚡ Electrolyte</a>
-            <a href="#shots" class="cat-pill">🔥 Shots</a>
-            <a href="#smoothies" class="cat-pill">🌀 Smoothies</a>
-            <a href="#protein" class="cat-pill">💪 Protein</a>
-            <a href="#treats" class="cat-pill">🍌 Treats</a>
-            <a href="#coffee" class="cat-pill">☕ Café</a>
-        </nav>
-    </div>
-
-    <!-- ░░░ MENU CONTENT ░░░ -->
-    <main class="menu-main">
-
-        <!-- ═══ FOOD ═══ -->
-        <section class="menu-section" id="food">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Food</h2>
-            </div>
-
-            <div class="menu-subsection">
-                <h3 class="menu-sub-title">🍚 Poké Bowl</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Aloha Salmon Poke</span>
-                            <span class="menu-item-price">S 12,90€ &nbsp;|&nbsp; L 14,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Riz vinaigré, saumon, avocat, mangue, chou, edamame, concombre</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Tunavocado Poke</span>
-                            <span class="menu-item-price">S 11,90€ &nbsp;|&nbsp; L 13,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Riz vinaigré, mousse de thon maison, avocat, chou, mangue, concombre</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Chicken Teriyaki Poke</span>
-                            <span class="menu-item-price">S 11,90€ &nbsp;|&nbsp; L 13,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Riz vinaigré, poulet teriyaki, avocat, mangue, chou, edamame, coriandre</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Veggie Tofu Poke</span>
-                            <span class="menu-item-price">S 11,90€ &nbsp;|&nbsp; L 13,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Riz vinaigré, dés de tofu caramélisé, avocat, mangue, chou, carotte, edamame</p>
-                        <span class="tag tag-vegan">Vegan</span>
-                    </div>
+<br><br>
+                      <li>
+                        <strong> SANDWICHES </strong><span></span> 
+                      </li>
+                      <li>
+                        <strong>BANH MI :</strong> <span> 6,90€</span><p id="tr_8th_dish"> Pain aux Graines, Curry Sauce, Poulet Terryaki ou Mousse de Thon, Carrote Pickles, Concombre, Coriandre, Oignon Rouge </p> 
+                      </li>
+                      <li>
+                        <strong>GRILLED TUNA :</strong> <span> 6,90€</span> <p id="tr_9th_dish"> Pain de Campagne, Mousse de Thon, Carrote, Olives, Oignon Rouge, Emmental (Toaste)</p> 
+                      </li>
+                      <li>
+                        <strong>GOAT CHEESE FOCACCIA :</strong>  <span> 6,90€</span><p id="tr_9th_dish"> Pesto Rosso, Fromage de Chèvre, Pousse D'épinard (Toasté)</p> 
+                      </li>
+                      <li>
+                        <strong></strong><p id="tr_9th_dish"> Extra Topping +1€ | Extra Protein +3€ | Extra Oeuf +1€</p> 
+                      </li>
+                    </ul>
+                    
+                
+                  </div>
+            
+                  <!-- Food Images Section -->
+                  <div class="menu-images">
+                    <img id="food" src="food.png" alt="image 1">
+                  </div>
                 </div>
-            </div>
 
-            <div class="menu-subsection">
-                <h3 class="menu-sub-title">🥗 Salade Bowl</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Nammos</span>
-                            <span class="menu-item-price">S 11,90€ &nbsp;|&nbsp; L 13,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Salade, tomate, concombre, poivron, feta, olive kalamata, oignon rouge, croutons de pain nordique</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Tunavocado Salade</span>
-                            <span class="menu-item-price">S 11,90€ &nbsp;|&nbsp; L 13,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Salade, quinoa, mousse de thon maison, avocats, chou, poivrons, edamame, oignon rouge, olives</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Chicken Samui Bowl</span>
-                            <span class="menu-item-price">S 11,90€ &nbsp;|&nbsp; L 13,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Salade, quinoa, poulet teriyaki, chou, avocats, mangue, tomates, carottes, coriandre, citron vert</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">High Protein</span>
-                            <span class="menu-item-price">S 12,90€ &nbsp;|&nbsp; L 14,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Salade, quinoa, saumon, avocat, oeuf, carotte, edamame, croutons, oignon rouge</p>
-                        <span class="tag tag-protein">High Protein</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Tofu Power Bowl</span>
-                            <span class="menu-item-price">S 11,90€ &nbsp;|&nbsp; L 13,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Salade, quinoa, dés de tofu caramélisé, mangue, carotte, edamame, concombre, coriandre</p>
-                        <span class="tag tag-vegan">Vegan</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="menu-subsection">
-                <h3 class="menu-sub-title">🥖 Sandwiches</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Banh Mi</span>
-                            <span class="menu-item-price">6,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Pain aux graines, curry sauce, poulet teriyaki ou mousse de thon, carotte pickles, concombre, coriandre, oignon rouge</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Grilled Tuna</span>
-                            <span class="menu-item-price">6,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Pain de campagne, mousse de thon, carotte, olives, oignon rouge, emmental (toasté)</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-top">
-                            <span class="menu-item-name">Goat Cheese Focaccia</span>
-                            <span class="menu-item-price">6,90€</span>
-                        </div>
-                        <p class="menu-item-desc">Pesto rosso, fromage de chèvre, pousse d'épinard (toasté)</p>
-                        <span class="tag tag-veg">Végétarien</span>
-                    </div>
+                <div class="menu-container-1">
+                  <div class="menu-images">
+                    <img id="juices" src="juice.png" alt="image 2">
+                  </div>
+
+                  <div class="smoothies-menu" id="smoothies-menu">
+                   <h2>JUICES<span>6.90€</span></h2>
+                    <ul>
+                      <li>
+                        <strong>MORNING SUN:</strong><p id="tr_1st_juice">Carotte, Orange, Citron </p> 
+                      </li>
+                      <li>
+                        <strong>GREEN:</strong><p id="tr_2nd_juice">Pomme Granny, Citron Vert, Gingembre</p>  
+                      </li>
+                      <li>
+                        <strong>D-TOX: </strong><p id="tr_3rd_juice">Pomme Granny, Celeri, Concombre, Citron Vert</p>  
+                      </li>
+                      <li>
+                        <strong>FIT ME IN:</strong><p id="tr_4th_juice"> Ananas, Concombre, Citron Vert</p> 
+                      </li>
+                      <li>
+                        <strong>PINE-APPLE: </strong><p id="tr_5th_juice">Ananas, Pomme Granny, Menthe, Citron Vert</p> 
+                      </li>
+                      <li>
+                        <strong>IMMUNITY BOOST:</strong><p id="tr_6th_juice"> Carotte, Orange, Pomme, Gingembre</p> 
+                      </li>
+                      <li>
+                        <strong>MASTER CLEANSE:</strong><p id="tr_7th_juice"> Celeri, Épinard, Pomme, Citron, Gingembre</p>  
+                      </li>
+                      <li>
+                        <strong>ENERGIZER:</strong><p id="tr_8th_juice">Pomme Granny, Pamplemousse, Gingembre</p> 
+                      </li>
+                      <li>
+                        <strong>BYE DOC :</strong><p id="tr_8th_juice">Betterave, Carotte, Pomme, Gingembre</p> 
+                      </li>
+                    </ul>
+<br> <br>
+                    <h2>ELECTROLYTE DRINK</h2>
+                    <ul>
+                      <li>
+                        <strong>CHURCHILL:</strong><span>5€</span><p id="tr_1st_treat"> Citron, Eau Petillante, Fleur de Sel </p>
+                      </li>
+                      <li>
+                        <strong>SPICY LIME:</strong><span>6.90€</span><p id="tr_2nd_juice"> Gingembre, Citron Vert, Eau Petillante, Sirop D'Agave, Fleur de Sel</p>
+                      </li>
+                      <li>
+                        <strong>PINK LEMONADE: </strong><span>6.90€</span><p id="tr_3rd_juice"> Pamplemousse, Fleur D'Oranger, Eau Petillante, Sirop D'Agave, Fleur de Sel</p>  
+                      </li>
+                    </ul>
+<br> <br>
+                    <h2>SHOTS<span>4€</span></h2>
+                    <ul>
+                      <li>
+                        <strong>FIRE:</strong><p id="tr_1st_juice"> Gingembre Pure </p> 
+                      </li>
+                      <li>
+                        <strong>DTOX:</strong><p id="tr_2nd_juice"> Gingembre, Citron, Charbon Actif</p>  
+                      </li>
+                      <li>
+                        <strong>Alkalizer: </strong><p id="tr_3rd_juice"> Épinard, Gingembre</p>  
+                      </li>
+                      <li>
+                        <strong></strong><p id="tr_3rd_juice"> Extra Gingembre/Citron +1€</p>  
+                      </li>
+                    </ul>
+                   <br><br>
+                  
+                    <h2>SUPERFOOD SMOOTHIES<span>7.9€</span></h2>
+                    
+                    <ul>
+                      <li>
+                        <strong>AÇAI BERRIES :</strong><p id="tr_1st_smoothie">Açaí, Banane, Myrtilles, Pomme</p> 
+                      </li>
+                      <li>
+                        <strong>B.A.D :</strong><p id="tr_2nd_smoothie">Banane, Avoine, Dates, Lait D’Avoine</p> 
+                      </li>
+                      <li>
+                        <strong>GLOW:</strong><p id="tr_3rd_smoothie"> Épinard, Banane, Mangue, Coconut Milk & Collagen </p>
+                      </li>
+                      <li>
+                        <strong>GREEN BLISS:</strong><p id="tr_4th_smoothie">Mangue, Banane, Coco Milk & Spiruline</p> 
+                      </li>
+                      <li>
+                        <strong>HANGOVER CURE:</strong><p id="tr_5th_smoothie">Épinard, Banane, Miel, Coconut Milk & Charbon Actif</p> 
+                      </li>
+                      <li>
+                        <strong>SUNRISE:</strong><p id="tr_6th_smoothie">Matcha, Banane, Dates, Lait D'Avoine</p> 
+                      </li>
+                      <li>
+                        <strong> SLOW DOWN:</strong><p id="tr_7th_smoothie">Fraises, Bananes, Pomme, Gingembre</p> 
+                      </li>
+                      <li>
+                        <strong> BLEND:</strong><p id="tr_7th_smoothie">Expresso Shot, Banane, Peanut Butter, Dates, Lait D'Avoine</p> 
+                      </li>
+                    </ul>
+<br><br>
+                    <h2>PROTEIN SHAKES <span>8.9€</span></h2>
+                    <ul>
+                      <li>
+                        <strong>PROTEIN PEANUT:</strong><p id="tr_1st_shake">Protein Powder Vanilla (Vegan), Banane, Beurre de Cacahuète , Lait D'Avoine</p> 
+                      </li>
+                      <li>
+                        <strong>PROTEIN CHOCO:</strong><p id="tr_2nd_shake">Protein Powder Vanilla (Vegan), Banane, Lait de Coco, Cacao, Fleur de Sel</p>  
+                      </li>
+                      <li>
+                        <strong>HABIBI STRONG:</strong><p id="tr_2nd_shake">Protein Powder Vanilla (Vegan), Banane, Beaurre D'Amandes, Lait D'Amande, Fleur D'Oranger</p>  
+                      </li>
+                      <li>
+                        <strong>BLACK SESAME:</strong><p id="tr_2nd_shake">Protein Powder Vanilla (Vegan), Banane, Lait de Coco, Sesame Noir, Charbon Actif</p> 
+         
+                      </li>
+                      <li>
+                        <strong></strong><p id="tr_2nd_shake">Extra Peanut Butter +1€ | Extra Protein +2€ | Extra Collagen +2€ </p>  
+                      </li>
+                    </ul>
+
+                    
+                  </div>
                 </div>
-                <p class="menu-extras">Extra Topping +1€ &nbsp;·&nbsp; Extra Protein +3€ &nbsp;·&nbsp; Extra Oeuf +1€</p>
+
+                <div class="menu-container">
+                  <div class="coffee-menu">   
+                     <h2>TREATS</h2>
+                    <ul>
+                      <li>
+                        <strong>AÇAÍ BOWL :</strong><span>11€</span> <p id="tr_1st_treat">Pulpe D’Açaí Glacée, Banane, Beurre de Cacahuète, Granola, Blueberries</p>
+                      </li>
+                      <li>
+                        <strong>FRESH FRUITS BOWL :</strong><span>5€</span><p id="tr_2nd_treat">Seasonal</p>
+                      </li>
+                      <li>
+                        <strong>BANANA BREAD :</strong><span>4,5€</span><p id="tr_3rd_treat">Homemade</p>
+                      </li>
+                      <li>
+                        <strong>GREEK YOGURT :</strong><span> 5€</span><p id="tr_4th_treat">Miel Granola Banane et Fruits Rouge</p>
+                      </li>
+                      <li>
+                        <strong>PROTEIN BALLS :</strong><span> 4,5€</span><p id="tr_5th_treat">Dates, Avoine, Noix, Beaurre de Cachuette (par 2)</p>
+                      </li>
+                    </ul>
+                   <br></br>
+                    <h2 id="tr_coffee_title">CAFE</h2>
+                      <ul>
+                        <li>
+                          <strong>ESPRESSO:</strong><span>2.5€</span>
+                        </li>
+                        <li>
+                          <strong>AMERICANO:</strong><span>3€</span>
+                        </li>
+                        <li>
+                          <strong>DOUBLE:</strong><span>3.5€</span>
+                        </li>
+                        <li>
+                          <strong>LATTE:</strong><span>4.5€</span> 
+                        </li>
+                        <li>
+                          <strong>CAPPUCCINO:</strong><span>4.5€</span>
+                        </li>
+                        <li>
+                          <strong>FLAT WHITE:</strong><span>5€</span> 
+                        </li>
+                        <li>
+                          <strong>TEA:</strong><span>4€</span> 
+                        </li>
+                        <li>
+                          <strong>MATCHA:</strong> <span>6€</span> 
+                        </li>
+                        <li>
+                          <strong>CHAI LATTE:</strong> <span>6€</span>
+                        </li>
+                        <li>
+                          <strong>CHARCOAL LATTE:</strong> <span>6€</span>
+                        </li>
+                        <br>
+                        <br>
+                        <li id="tr_milk">
+                          LAIT VEGÉTAUX +0.5€
+                        </li>
+                        <li id="tr_ice">
+                          MAKE IT ICE +1€
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="menu-images">
+                    <img id="cafe" src="cafe.png" alt="image 3">
+                  </div>
+                </div>    
             </div>
+                
+                  
         </section>
-
-        <!-- ═══ JUICES ═══ -->
-        <section class="menu-section alt" id="juices">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Juices <span class="menu-section-price">6,90€</span></h2>
-            </div>
-            <div class="menu-items grid-3">
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Morning Sun</span>
-                    <p class="menu-item-desc">Carotte, orange, citron</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Green</span>
-                    <p class="menu-item-desc">Pomme granny, citron vert, gingembre</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">D-Tox</span>
-                    <p class="menu-item-desc">Pomme granny, céleri, concombre, citron vert</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Fit Me In</span>
-                    <p class="menu-item-desc">Ananas, concombre, citron vert</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Pine-Apple</span>
-                    <p class="menu-item-desc">Ananas, pomme granny, menthe, citron vert</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Immunity Boost</span>
-                    <p class="menu-item-desc">Carotte, orange, pomme, gingembre</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Master Cleanse</span>
-                    <p class="menu-item-desc">Céleri, épinard, pomme, citron, gingembre</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Energizer</span>
-                    <p class="menu-item-desc">Pomme granny, pamplemousse, gingembre</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Bye Doc</span>
-                    <p class="menu-item-desc">Betterave, carotte, pomme, gingembre</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══ ELECTROLYTE ═══ -->
-        <section class="menu-section" id="electrolyte">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Electrolyte Drink</h2>
-            </div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Churchill</span>
-                        <span class="menu-item-price">5€</span>
-                    </div>
-                    <p class="menu-item-desc">Citron, eau pétillante, fleur de sel</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Spicy Lime</span>
-                        <span class="menu-item-price">6,90€</span>
-                    </div>
-                    <p class="menu-item-desc">Gingembre, citron vert, eau pétillante, sirop d'agave, fleur de sel</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Pink Lemonade</span>
-                        <span class="menu-item-price">6,90€</span>
-                    </div>
-                    <p class="menu-item-desc">Pamplemousse, fleur d'oranger, eau pétillante, sirop d'agave, fleur de sel</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══ SHOTS ═══ -->
-        <section class="menu-section alt" id="shots">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Shots <span class="menu-section-price">4€</span></h2>
-            </div>
-            <div class="menu-items grid-3">
-                <div class="menu-item compact">
-                    <span class="menu-item-name">🔥 Fire</span>
-                    <p class="menu-item-desc">Gingembre pur</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">🖤 Dtox</span>
-                    <p class="menu-item-desc">Gingembre, citron, charbon actif</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">🌿 Alkalizer</span>
-                    <p class="menu-item-desc">Épinard, gingembre</p>
-                </div>
-            </div>
-            <p class="menu-extras">Extra Gingembre / Citron +1€</p>
-        </section>
-
-        <!-- ═══ SMOOTHIES ═══ -->
-        <section class="menu-section" id="smoothies">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Superfood Smoothies <span class="menu-section-price">7,90€</span></h2>
-            </div>
-            <div class="menu-items grid-3">
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Açaí Berries</span>
-                    <p class="menu-item-desc">Açaí, banane, myrtilles, pomme</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">B.A.D</span>
-                    <p class="menu-item-desc">Banane, avoine, dates, lait d'avoine</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Glow</span>
-                    <p class="menu-item-desc">Épinard, banane, mangue, coconut milk &amp; collagen</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Green Bliss</span>
-                    <p class="menu-item-desc">Mangue, banane, coco milk &amp; spiruline</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Hangover Cure</span>
-                    <p class="menu-item-desc">Épinard, banane, miel, coconut milk &amp; charbon actif</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Sunrise</span>
-                    <p class="menu-item-desc">Matcha, banane, dates, lait d'avoine</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Slow Down</span>
-                    <p class="menu-item-desc">Fraises, bananes, pomme, gingembre</p>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Blend</span>
-                    <p class="menu-item-desc">Espresso shot, banane, peanut butter, dates, lait d'avoine</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══ PROTEIN ═══ -->
-        <section class="menu-section alt" id="protein">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Protein Shakes <span class="menu-section-price">8,90€</span></h2>
-            </div>
-            <div class="menu-items grid-3">
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Protein Peanut</span>
-                    <p class="menu-item-desc">Protein powder vanilla (vegan), banane, beurre de cacahuète, lait d'avoine</p>
-                    <span class="tag tag-vegan">Vegan</span>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Protein Choco</span>
-                    <p class="menu-item-desc">Protein powder vanilla (vegan), banane, lait de coco, cacao, fleur de sel</p>
-                    <span class="tag tag-vegan">Vegan</span>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Habibi Strong</span>
-                    <p class="menu-item-desc">Protein powder vanilla (vegan), banane, beurre d'amandes, lait d'amande, fleur d'oranger</p>
-                    <span class="tag tag-vegan">Vegan</span>
-                </div>
-                <div class="menu-item compact">
-                    <span class="menu-item-name">Black Sesame</span>
-                    <p class="menu-item-desc">Protein powder vanilla (vegan), banane, lait de coco, sésame noir, charbon actif</p>
-                    <span class="tag tag-vegan">Vegan</span>
-                </div>
-            </div>
-            <p class="menu-extras">Extra Peanut Butter +1€ &nbsp;·&nbsp; Extra Protein +2€ &nbsp;·&nbsp; Extra Collagen +2€</p>
-        </section>
-
-        <!-- ═══ TREATS ═══ -->
-        <section class="menu-section" id="treats">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Treats</h2>
-            </div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Açaí Bowl</span>
-                        <span class="menu-item-price">11€</span>
-                    </div>
-                    <p class="menu-item-desc">Pulpe d'açaí glacée, banane, beurre de cacahuète, granola, blueberries</p>
-                    <span class="tag tag-vegan">Vegan</span>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Fresh Fruits Bowl</span>
-                        <span class="menu-item-price">5€</span>
-                    </div>
-                    <p class="menu-item-desc">Seasonal</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Banana Bread</span>
-                        <span class="menu-item-price">4,50€</span>
-                    </div>
-                    <p class="menu-item-desc">Homemade</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Greek Yogurt</span>
-                        <span class="menu-item-price">5€</span>
-                    </div>
-                    <p class="menu-item-desc">Miel, granola, banane et fruits rouges</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-top">
-                        <span class="menu-item-name">Protein Balls</span>
-                        <span class="menu-item-price">4,50€</span>
-                    </div>
-                    <p class="menu-item-desc">Dates, avoine, noix, beurre de cacahuète (par 2)</p>
-                    <span class="tag tag-vegan">Vegan</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══ CAFÉ ═══ -->
-        <section class="menu-section alt" id="coffee">
-            <div class="menu-section-header">
-                <h2 class="menu-section-title">Café</h2>
-            </div>
-            <div class="coffee-grid">
-                <div class="coffee-item"><span>Espresso</span><span>2,50€</span></div>
-                <div class="coffee-item"><span>Americano</span><span>3€</span></div>
-                <div class="coffee-item"><span>Double</span><span>3,50€</span></div>
-                <div class="coffee-item"><span>Latte</span><span>4,50€</span></div>
-                <div class="coffee-item"><span>Cappuccino</span><span>4,50€</span></div>
-                <div class="coffee-item"><span>Flat White</span><span>5€</span></div>
-                <div class="coffee-item"><span>Tea</span><span>4€</span></div>
-                <div class="coffee-item"><span>Matcha</span><span>6€</span></div>
-                <div class="coffee-item"><span>Chai Latte</span><span>6€</span></div>
-                <div class="coffee-item"><span>Charcoal Latte</span><span>6€</span></div>
-            </div>
-            <div class="coffee-extras">
-                <span>🌱 Lait végétaux +0,50€</span>
-                <span>🧊 Make it ice +1€</span>
-            </div>
-        </section>
-
     </main>
-
-    <!-- ░░░ FOOTER ░░░ -->
     <footer>
-        <div class="footer-top">
-            <div class="footer-brand">
-                <span class="footer-logo">NUDE</span>
-                <p>Coffee · Healthy Food · Good Vibes</p>
-            </div>
-            <nav class="footer-nav">
-                <div class="footer-col">
-                    <h4>Menu</h4>
-                    <a href="#food">Food</a>
-                    <a href="#smoothies">Smoothies</a>
-                    <a href="#coffee">Coffee</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Visit</h4>
-                    <a href="https://www.google.fr/maps/place/NUDE/@48.8803683,2.2132125,13z" target="_blank">Location</a>
-                    <a href="tel:0695243162">Call us</a>
-                    <a href="https://www.instagram.com/nudefood_fr/" target="_blank">Instagram</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Language</h4>
-                    <a href="#">English</a>
-                    <a href="#">Français</a>
-                </div>
-            </nav>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 NUDE Coffee Shop. All rights reserved.</p>
-            <p>Website by <a href="https://wilsonmdev.com/" target="_blank">Wilson de Moura</a></p>
-        </div>
+        <ul class="languages">
+          <li><a href="#" onclick="switchLanguage('en')">English</a></li>
+          <li><a href="#" onclick="switchLanguage('fr')">Français</a></li>
+       </ul>
+
+       <div class="end-container">
+         <p>2024 Nude Coffee Shop. All rights reserved.</p>
+         Website created by <a href="https://wilsonmdev.com/" target="_blank">Wilson de Moura</a>.</p>
+       </div>
     </footer>
+    <script src='menu.js'></script> <!-- This is where you would put your JavaScript -->
 
-    <script>
-        // Sticky category nav highlight
-        const sections = document.querySelectorAll('.menu-section');
-        const pills = document.querySelectorAll('.cat-pill');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    pills.forEach(p => p.classList.remove('active'));
-                    const active = document.querySelector(`.cat-pill[href="#${entry.target.id}"]`);
-                    if (active) active.classList.add('active');
-                }
-            });
-        }, { rootMargin: '-40% 0px -55% 0px' });
-        sections.forEach(s => observer.observe(s));
-
-        // Scroll reveal
-        const revealEls = document.querySelectorAll('.menu-item, .menu-subsection, .coffee-item');
-        const revealObs = new IntersectionObserver((entries) => {
-            entries.forEach(el => {
-                if (el.isIntersecting) {
-                    el.target.classList.add('revealed');
-                    revealObs.unobserve(el.target);
-                }
-            });
-        }, { threshold: 0.08 });
-        revealEls.forEach(el => revealObs.observe(el));
-    </script>
 </body>
 </html>
